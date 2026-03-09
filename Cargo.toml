@@ -1,0 +1,31 @@
+[package]
+name = "rushdown-footnote"
+version = "0.9.0"
+edition = "2021"
+rust-version = "1.87"
+description = "Footnote extension for rushdown markdown parser"
+documentation = "https://docs.rs/rushdown-footnote"
+homepage = "https://github.com/yuin/rushdown-footnote"
+repository = "https://github.com/yuin/rushdown-footnote"
+readme = "README.md"
+keywords = ["markdown", "commonmark"]
+license = "MIT"
+categories = ["text-processing"]
+resolver = "2"
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+codegen-units = 1
+panic = 'abort'
+
+[features]
+default = ["std"]
+# std = ["rushdown/default", "rushdown/pp-ast"]
+std = ["rushdown/default"]
+alloc = []
+no-std = ["alloc", "rushdown/no-std"]
+
+[dependencies]
+rushdown = { version = "0.9.4", default-features = false}
