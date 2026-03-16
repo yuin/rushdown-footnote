@@ -409,8 +409,7 @@ impl InlineParser for FootnoteReferenceParser {
             reader.advance(close + 1);
 
             if line[0] == b'!' {
-                parent_ref
-                    .merge_or_append_text_segment(arena, (seg.start(), seg.start() + 1).into());
+                parent_ref.merge_or_append_text(arena, (seg.start(), seg.start() + 1).into());
             }
             return Some(node);
         }
