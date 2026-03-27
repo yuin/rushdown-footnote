@@ -1,6 +1,6 @@
 [package]
 name = "rushdown-footnote"
-version = "0.9.4"
+version = "0.9.5"
 edition = "2021"
 rust-version = "1.87"
 description = "Footnote extension for rushdown markdown parser"
@@ -28,4 +28,4 @@ alloc = []
 no-std = ["alloc", "rushdown/no-std"]
 
 [dependencies]
-rushdown = { version = "0.13.0", default-features = false}
+rushdown = { version = "0.14.0", default-features = false}
