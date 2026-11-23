@@ -22,7 +22,7 @@ fn test_footnote() {
         html::Options {
             allows_unsafe: true,
             xhtml: false,
-            ..html::Options::default()
+            ..Default::default()
         },
         footnote_parser_extension(),
         footnote_html_renderer_extension(FootnoteHtmlRendererOptions::default()),

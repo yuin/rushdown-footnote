@@ -89,9 +89,9 @@ dependencies = [
 
 [[package]]
 name = "rushdown"
-version = "0.18.0"
+version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "57358ca9b61ea373ec6bf1c9e916f521f19a919587d9179624d47c40da2ffc5d"
+checksum = "f5ffdc5468c3c6870a9d3a05d9b0e703291b40477ef6f1d1df97f2ce0133ae81"
 dependencies = [
  "bitflags",
  "hashbrown",
@@ -102,7 +102,7 @@ dependencies = [
 
 [[package]]
 name = "rushdown-footnote"
-version = "0.9.8"
+version = "0.10.0"
 dependencies = [
  "rushdown",
 ]
